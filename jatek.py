@@ -1,8 +1,6 @@
 import random
 
 ellenfel = input("Gép vagy játékos ellen játszol? (g, j): ")
-
-# lapok kiosztása, mindenki kap 2-2 lapot (1-11 közötti értékek, mint a blackjack-ben)
 sajatlap1 = random.randint(1, 11)
 sajatlap2 = random.randint(1, 11)
 sajatoosszeg = sajatlap1 + sajatlap2
@@ -10,7 +8,6 @@ sajatoosszeg = sajatlap1 + sajatlap2
 print(f"A te lapjaid: {sajatlap1} és {sajatlap2} (összesen: {sajatoosszeg})")
 
 if ellenfel == "g":
-    # gép ellen
     geplap1 = random.randint(1, 11)
     geplap2 = random.randint(1, 11)
     gepoosszeg = geplap1 + geplap2
